@@ -19,10 +19,12 @@
   menuButton.addEventListener('click', () => {
     const opened = nav.classList.toggle('open');
     menuButton.setAttribute('aria-expanded', String(opened));
+    menuButton.setAttribute('aria-label', opened ? 'Fermer le menu' : 'Ouvrir le menu');
   });
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
     nav.classList.remove('open');
     menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Ouvrir le menu');
   }));
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
