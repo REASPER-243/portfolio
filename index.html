@@ -5,15 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Portfolio officiel de Théophile Kibonge Ndobo, étudiant en cybersécurité et ethical hacking à EFREI Paris. Formation, projets, compétences et contact professionnel.">
+  <meta name="description" content="Portfolio de Théophile Kibonge Ndobo, étudiant en cybersécurité et ethical hacking à EFREI Paris. Découvrez son parcours, ses projets et ses compétences.">
   <meta name="author" content="Théophile Kibonge Ndobo">
+  <link rel="canonical" href="https://reasper-243.github.io/portfolio/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Théophile Kibonge Ndobo — Portfolio">
-  <meta property="og:description" content="Étudiant en cybersécurité et ethical hacking. Découvrez mon parcours, mes projets et mes compétences.">
-  <meta property="og:image" content="assets/theophile-hero.jpg">
+  <meta property="og:title" content="Théophile Kibonge Ndobo | Cybersécurité à EFREI">
+  <meta property="og:url" content="https://reasper-243.github.io/portfolio/">
+  <meta property="og:description" content="Étudiant en cybersécurité et ethical hacking à EFREI Paris. Découvrez mon parcours, mes projets et mes compétences.">
+  <meta property="og:image" content="https://reasper-243.github.io/portfolio/assets/theophile-hero.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1025">
+  <meta property="og:image:height" content="1535">
+  <meta property="og:image:alt" content="Portrait professionnel de Théophile Kibonge Ndobo, étudiant à EFREI Paris">
+  <meta property="profile:first_name" content="Théophile">
+  <meta property="profile:last_name" content="Kibonge Ndobo">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Théophile Kibonge Ndobo — Portfolio</title>
+  <meta name="twitter:title" content="Théophile Kibonge Ndobo | Cybersécurité à EFREI">
+  <meta name="twitter:description" content="Étudiant en cybersécurité et ethical hacking à EFREI Paris. Découvrez mon parcours, mes projets et mes compétences.">
+  <meta name="twitter:image" content="https://reasper-243.github.io/portfolio/assets/theophile-hero.jpg">
+  <meta name="twitter:image:alt" content="Portrait professionnel de Théophile Kibonge Ndobo, étudiant à EFREI Paris">
+  <title>Théophile Kibonge Ndobo | Cybersécurité à EFREI</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="https://reasper-243.github.io/portfolio/assets/theophile-hero.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -22,15 +35,33 @@
   {
     "@context":"https://schema.org",
     "@type":"ProfilePage",
-    "name":"Portfolio de Théophile Kibonge Ndobo",
+    "@id":"https://reasper-243.github.io/portfolio/#profile",
+    "url":"https://reasper-243.github.io/portfolio/",
+    "name":"Théophile Kibonge Ndobo | Cybersécurité à EFREI",
+    "description":"Portfolio de Théophile Kibonge Ndobo, étudiant en cybersécurité et ethical hacking à EFREI Paris. Découvrez son parcours, ses projets et ses compétences.",
+    "primaryImageOfPage":{"@id":"https://reasper-243.github.io/portfolio/#portrait"},
     "mainEntity":{
       "@type":"Person",
+      "@id":"https://reasper-243.github.io/portfolio/#person",
+      "givenName":"Théophile",
+      "familyName":"Kibonge Ndobo",
+      "mainEntityOfPage":{"@id":"https://reasper-243.github.io/portfolio/#profile"},
       "name":"Théophile Kibonge Ndobo",
-      "image":"assets/theophile-hero.jpg",
+      "image":{
+        "@type":"ImageObject",
+        "@id":"https://reasper-243.github.io/portfolio/#portrait",
+        "contentUrl":"https://reasper-243.github.io/portfolio/assets/theophile-hero.jpg",
+        "url":"https://reasper-243.github.io/portfolio/assets/theophile-hero.jpg",
+        "name":"Portrait professionnel de Théophile Kibonge Ndobo",
+        "caption":"Théophile Kibonge Ndobo, étudiant en cybersécurité à EFREI Paris",
+        "description":"Portrait professionnel de Théophile Kibonge Ndobo, étudiant en Bachelor Cybersécurité et Ethical Hacking à EFREI Paris.",
+        "representativeOfPage":true
+      },
       "email":"mailto:theophilekibonge1@gmail.com",
-      "url":"",
+      "url":"https://reasper-243.github.io/portfolio/",
       "sameAs":[
         "https://github.com/REASPER-243",
+        "https://github.com/REASPER-243/portfolio",
         "https://www.linkedin.com/in/th%C3%A9ophile-kibonge-ndobo/"
       ],
       "jobTitle":"Étudiant en cybersécurité et ethical hacking",
@@ -43,15 +74,15 @@
   <a class="skip-link" href="#main" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="TKN — accueil">TKN<span>.</span></a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" aria-label="Navigation principale">
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="primary-navigation" aria-label="Navigation principale">
       <a href="#about" data-fr="À propos" data-en="About">À propos</a>
       <a href="#journey" data-fr="Parcours" data-en="Journey">Parcours</a>
       <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
       <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
       <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
     </nav>
-    <button class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+    <button class="lang-toggle" type="button" aria-label="Passer en anglais">EN</button>
   </header>
 
   <main id="main">
@@ -59,7 +90,7 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="eyebrow-line"></span><span data-fr="PORTFOLIO PERSONNEL" data-en="PERSONAL PORTFOLIO">PORTFOLIO PERSONNEL</span></p>
         <p class="hero-kicker" data-fr="Technologie · Sécurité · Innovation" data-en="Technology · Security · Innovation">Technologie · Sécurité · Innovation</p>
-        <h1>Théophile<br><em>Kibonge Ndobo</em><span class="gold-dot">.</span></h1>
+        <h1>Théophile<br><em>Kibonge Ndobo</em><span class="gold-dot" aria-hidden="true">.</span></h1>
         <p class="hero-description" data-fr="Étudiant en Bachelor Cybersécurité et Ethical Hacking à EFREI Paris. Je développe mes compétences en programmation, réseaux et sécurité informatique." data-en="Bachelor's student in Cybersecurity and Ethical Hacking at EFREI Paris, developing skills in programming, networks and information security.">Étudiant en Bachelor Cybersécurité et Ethical Hacking à EFREI Paris. Je développe mes compétences en programmation, réseaux et sécurité informatique.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#projects" data-fr="Découvrir mes projets" data-en="Explore my projects">Découvrir mes projets <span>↗</span></a>
@@ -68,7 +99,7 @@
         <div class="hero-meta"><span data-fr="Basé en région parisienne" data-en="Based in the Paris region">Basé en région parisienne</span><span class="meta-separator"></span><span data-fr="Ouvert aux opportunités de stage" data-en="Open to internship opportunities">Ouvert aux opportunités de stage</span></div>
       </div>
       <div class="hero-visual reveal">
-        <div class="portrait-frame"><img src="assets/theophile-hero.jpg" alt="Portrait professionnel de Théophile Kibonge Ndobo" fetchpriority="high"></div>
+        <div class="portrait-frame"><img src="assets/theophile-hero.jpg" alt="Portrait professionnel de Théophile Kibonge Ndobo, étudiant en cybersécurité à EFREI Paris" width="1025" height="1535" fetchpriority="high" decoding="async"></div>
         <div class="portrait-caption"><span>THÉOPHILE KIBONGE NDOBO</span><span>01 / 05</span></div>
         <div class="portrait-mark" aria-hidden="true">TKN</div>
       </div>
@@ -78,7 +109,7 @@
     <section class="about section-wrap section-pad" id="about">
       <div class="section-heading reveal"><p class="eyebrow">01 / <span data-fr="À PROPOS" data-en="ABOUT">À PROPOS</span></p><h2 data-fr="Apprendre. Construire. <em>Progresser.</em>" data-en="Learn. Build. <em>Improve.</em>">Apprendre. Construire. <em>Progresser.</em></h2></div>
       <div class="about-grid">
-        <div class="about-photo reveal"><img src="assets/theophile-about.jpg" alt="Théophile Kibonge Ndobo, portrait de profil" loading="lazy"><span class="photo-index">02 — PROFILE</span></div>
+        <div class="about-photo reveal"><img src="assets/theophile-about.jpg" alt="Théophile Kibonge Ndobo, portrait de profil" width="1025" height="1534" loading="lazy" decoding="async"><span class="photo-index">02 — PROFILE</span></div>
         <div class="about-copy reveal">
           <p class="lead" data-fr="Je suis étudiant en première année de Bachelor Cybersécurité et Ethical Hacking à EFREI Paris. Je m'intéresse aux réseaux, à la programmation et à la sécurité des systèmes d'information." data-en="I am a first-year Bachelor's student in Cybersecurity and Ethical Hacking at EFREI Paris. My interests include networks, programming and information systems security.">Je suis étudiant en première année de Bachelor Cybersécurité et Ethical Hacking à EFREI Paris. Je m'intéresse aux réseaux, à la programmation et à la sécurité des systèmes d'information.</p>
           <p data-fr="Mon parcours m'a également permis de découvrir le fonctionnement d'une institution bancaire lors d'un stage scolaire chez RAWBANK à Kinshasa. Je souhaite continuer à apprendre par la pratique, les projets techniques et les expériences professionnelles." data-en="My background also includes an introductory school internship at RAWBANK in Kinshasa, where I discovered banking operations. I aim to keep learning through hands-on practice, technical projects and professional experience.">Mon parcours m'a également permis de découvrir le fonctionnement d'une institution bancaire lors d'un stage scolaire chez RAWBANK à Kinshasa. Je souhaite continuer à apprendre par la pratique, les projets techniques et les expériences professionnelles.</p>
